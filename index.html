@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cantinho do Cais</title>
+  <meta name="description" content="Cantinho do Cais — cozinha acolhedora junto ao cais em São Brás." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <header class="site-header" id="top">
+    <a href="#top" class="brand" data-i18n="brand">Cantinho do Cais</a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#about" data-i18n="navAbout">Sobre</a>
+      <a href="#menu" data-i18n="navMenu">Menu</a>
+      <a href="#gallery" data-i18n="navGallery">Galeria</a>
+      <a href="#testimonials" data-i18n="navReviews">Comentários</a>
+      <a href="#reservas" data-i18n="navReserve">Reservas</a>
+      <a href="#contact" data-i18n="navContact">Contactos</a>
+    </nav>
+
+    <div class="header-actions">
+      <label for="languageSelect" class="sr-only">Idioma</label>
+      <select id="languageSelect" class="language-select" aria-label="Selecionar idioma">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+      </select>
+      <a href="tel:296442631" class="btn btn-call" data-i18n="callNow">Ligar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-animate">
+      <div class="hero-content">
+        <p class="hero-kicker" data-i18n="heroKicker">Sabores autênticos junto ao mar</p>
+        <h1 data-i18n="heroTitle">Cantinho do Cais</h1>
+        <p class="hero-text" data-i18n="heroText">
+          Uma experiência gastronómica premium em São Brás, onde tradição açoriana e elegância contemporânea se encontram.
+        </p>
+        <div class="hero-cta">
+          <a href="#reservas" class="btn btn-primary" data-i18n="heroReserve">Reservar mesa</a>
+          <a href="#menu" class="btn btn-ghost" data-i18n="heroMenu">Ver menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-animate" id="about">
+      <div class="section-heading">
+        <p class="section-tag" data-i18n="aboutTag">A nossa história</p>
+        <h2 data-i18n="aboutTitle">Cozinha com alma, hospitalidade com detalhe</h2>
+      </div>
+      <div class="about-grid">
+        <p data-i18n="aboutP1">
+          No Cantinho do Cais celebramos o mar, a terra e a cultura local com pratos criados a partir de ingredientes frescos e sazonais.
+        </p>
+        <p data-i18n="aboutP2">
+          Cada refeição é preparada com rigor, apresentação elegante e um serviço próximo, para que cada visita se torne memorável.
+        </p>
+      </div>
+    </section>
+
+    <section class="menu section-animate" id="menu">
+      <div class="section-heading">
+        <p class="section-tag" data-i18n="menuTag">Menu</p>
+        <h2 data-i18n="menuTitle">Seleção da casa</h2>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <h3 data-i18n="menu1Title">Lapas grelhadas com manteiga de alho</h3>
+          <p data-i18n="menu1Desc">Entrada clássica dos Açores com toque cítrico.</p>
+        </article>
+        <article class="menu-card">
+          <h3 data-i18n="menu2Title">Peixe do dia com legumes assados</h3>
+          <p data-i18n="menu2Desc">Produto fresco do mercado local, confecionado no ponto certo.</p>
+        </article>
+        <article class="menu-card">
+          <h3 data-i18n="menu3Title">Polvo braseado em puré rústico</h3>
+          <p data-i18n="menu3Desc">Textura perfeita, sabor intenso e apresentação sofisticada.</p>
+        </article>
+        <article class="menu-card">
+          <h3 data-i18n="menu4Title">Sobremesa de maracujá dos Açores</h3>
+          <p data-i18n="menu4Desc">Final fresco e equilibrado para uma refeição inesquecível.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section-animate" id="gallery">
+      <div class="section-heading">
+        <p class="section-tag" data-i18n="galleryTag">Galeria</p>
+        <h2 data-i18n="galleryTitle">Ambiente e detalhes que marcam</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" alt="Sala elegante do restaurante" loading="lazy" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Prato gourmet" loading="lazy" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80" alt="Detalhes de mesa" loading="lazy" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80" alt="Serviço de qualidade" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="testimonials section-animate" id="testimonials">
+      <div class="section-heading">
+        <p class="section-tag" data-i18n="reviewsTag">Comentários</p>
+        <h2 data-i18n="reviewsTitle">O que os clientes dizem</h2>
+      </div>
+      <div class="testimonial-grid">
+        <blockquote>
+          <p data-i18n="review1">“Ambiente impecável, serviço atento e pratos com enorme qualidade. Voltaremos sem dúvida.”</p>
+          <cite>— Sofia M.</cite>
+        </blockquote>
+        <blockquote>
+          <p data-i18n="review2">“Uma das melhores experiências gastronómicas da ilha. Elegância e sabor em perfeito equilíbrio.”</p>
+          <cite>— André R.</cite>
+        </blockquote>
+        <blockquote>
+          <p data-i18n="review3">“Desde a entrada à sobremesa, tudo excelente. Recomendo para jantar especial.”</p>
+          <cite>— Laura T.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="reservations section-animate" id="reservas">
+      <div class="section-heading">
+        <p class="section-tag" data-i18n="reserveTag">Reservas</p>
+        <h2 data-i18n="reserveTitle">Selecione o dia e faça o seu pedido</h2>
+        <p class="reserve-subtitle" data-i18n="reserveSubtitle">
+          Escolha uma data no calendário para abrir as opções de reserva por telefone ou email.
+        </p>
+      </div>
+
+      <div class="calendar-card">
+        <div class="calendar-header">
+          <button id="prevMonth" class="calendar-nav" aria-label="Mês anterior">‹</button>
+          <h3 id="calendarTitle"></h3>
+          <button id="nextMonth" class="calendar-nav" aria-label="Mês seguinte">›</button>
+        </div>
+        <div class="calendar-weekdays" id="weekdays"></div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+    </section>
+
+    <section class="contact section-animate" id="contact">
+      <div class="section-heading">
+        <p class="section-tag" data-i18n="contactTag">Contactos</p>
+        <h2 data-i18n="contactTitle">Visite-nos no Cantinho do Cais</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-details">
+          <p><strong data-i18n="addressLabel">Morada:</strong> Rua do Ramal 1, 9625-510 São Brás</p>
+          <p><strong data-i18n="phoneLabel">Telefone:</strong> <a href="tel:296442631">296 442 631</a></p>
+
+          <div class="hours">
+            <h3 data-i18n="hoursTitle">Horário de funcionamento</h3>
+            <ul>
+              <li data-i18n="hours1">Segunda a Quinta: 12:00–15:00 | 18:30–22:00</li>
+              <li data-i18n="hours2">Sexta e Sábado: 12:00–15:00 | 18:30–23:00</li>
+              <li data-i18n="hours3">Domingo: 12:00–16:00</li>
+            </ul>
+          </div>
+
+          <a href="tel:296442631" class="btn btn-primary contact-call" data-i18n="callButton">Ligar para reservar</a>
+        </div>
+
+        <div class="map-wrapper">
+          <iframe
+            title="Mapa Cantinho do Cais"
+            src="https://www.google.com/maps?q=Rua%20do%20Ramal%201%2C%209625-510%20S%C3%A3o%20Br%C3%A1s&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer">© <span id="currentYear"></span> Cantinho do Cais. Todos os direitos reservados.</p>
+  </footer>
+
+  <dialog id="reservationModal" class="reservation-modal">
+    <button id="closeModal" class="close-modal" aria-label="Fechar">×</button>
+    <p class="modal-tag" data-i18n="modalTag">Reserva selecionada</p>
+    <h3 id="selectedDateLabel"></h3>
+
+    <div class="modal-options">
+      <div class="modal-card">
+        <h4 data-i18n="modalPhoneTitle">Reservar por telefone</h4>
+        <p class="phone-big">296 442 631</p>
+        <a href="tel:296442631" class="btn btn-primary" data-i18n="modalPhoneBtn">Ligar agora</a>
+        <p class="modal-note" data-i18n="modalPhoneInfo">
+          Durante a chamada, indique o dia, hora pretendida, nome da reserva, número de pessoas e contacto.
+        </p>
+      </div>
+
+      <div class="modal-card">
+        <h4 data-i18n="modalEmailTitle">Pedir reserva por email</h4>
+        <p data-i18n="modalEmailText">Abra o seu email com assunto e mensagem já preenchidos.</p>
+        <a href="#" id="emailReservationLink" class="btn btn-ghost" data-i18n="modalEmailBtn">Abrir email</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
