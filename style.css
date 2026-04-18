@@ -443,5 +443,5 @@ blockquote p {
 .logo-img {
   height: 50px;
   width: auto;
-  display: block;
+  display: contain;
 }
