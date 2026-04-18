@@ -433,3 +433,14 @@ blockquote p {
     grid-template-columns: 1fr;
   }
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
